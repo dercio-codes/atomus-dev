@@ -18,10 +18,30 @@ export const Navbar = () => {
           backgroundSize: "contain",
         }}
       />
-      <Button sx={{ color: "#fff", fontWeight: "600" }}> Home </Button>
-      <Button sx={{ color: "#fff", fontWeight: "600" }}> About </Button>
-      <Button sx={{ color: "#fff", fontWeight: "600" }}> Projects </Button>
-      <Button sx={{ color: "#fff", fontWeight: "600" }}> Contact </Button>
+      <Button
+        sx={{ color: "#fff", fontWeight: "600", scale: { xs: "0.7", md: "1" } }}
+      >
+        {" "}
+        Home{" "}
+      </Button>
+      <Button
+        sx={{ color: "#fff", fontWeight: "600", scale: { xs: "0.7", md: "1" } }}
+      >
+        {" "}
+        About{" "}
+      </Button>
+      <Button
+        sx={{ color: "#fff", fontWeight: "600", scale: { xs: "0.7", md: "1" } }}
+      >
+        {" "}
+        Projects{" "}
+      </Button>
+      <Button
+        sx={{ color: "#fff", fontWeight: "600", scale: { xs: "0.7", md: "1" } }}
+      >
+        {" "}
+        Contact{" "}
+      </Button>
     </Box>
   );
 };

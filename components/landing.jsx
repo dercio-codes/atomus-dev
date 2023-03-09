@@ -62,13 +62,35 @@ export const Landing = () => {
             margin: "32px 0 0 0",
           }}
         />
+        <Typography
+          component="h4"
+          sx={{
+            fontSize: "21px",
+            fontWeight: "400",
+            textAlign: "center",
+          }}
+        >
+          {" "}
+          Inspiring Tech Needs for Business.{" "}
+        </Typography>
+        <Typography
+          component="h4"
+          sx={{
+            fontSize: "21px",
+            fontWeight: "400",
+            textAlign: "center",
+          }}
+        >
+          {" "}
+          Accelerating Tech with confidence{" "}
+        </Typography>
       </Box>
       <Box
         sx={{
           // background: "#8da9e4ff",
           position: "relative",
           width: "100%",
-          height: { xs: "100vh", lg: "100vh" },
+          height: { xs: "100vh", lg: "70vh" },
           display: "flex",
           alignItems: { xs: "flex-end", lg: "center" },
           justifyContent: { xs: "flex-end", lg: "center" },
@@ -79,10 +101,10 @@ export const Landing = () => {
       <Box
         sx={{
           height: { xs: "70vh", lg: "50vh" },
-          width: { xs: "70%", lg: "50%" },
+          width: { xs: "90%", lg: "50%" },
           bottom: "0",
           position: "absolute",
-          transform: { xs: "translateY(-60vh)", lg: "translateY(-75vh)" },
+          transform: { xs: "translateY(-50vh)", lg: "translateY(-55vh)" },
           borderRadius: "28px",
           background: "#142531ff",
           padding: "2.5rem",
@@ -139,16 +161,40 @@ export const Landing = () => {
           Enter Your Email:{" "}
         </Typography>
         <Box sx={{ display: "flex" }}>
-          <TextField sx={{ background: "#eee", width: "80%" }} />
+          <TextField
+            variant="standard"
+            sx={{
+              background: "",
+              width: "80%",
+              "& .MuiInputBase-root": {
+                borderBottom: "2px solid white",
+                color: "white",
+                margin: "0px 0 5px",
+              },
+              "& .MuiInputBase-root.Mui-focused": {
+                "& > fieldset": {
+                  borderBottom: "3px solid white",
+                  color: "#40e0d0",
+                },
+              },
+              "& .MuiInputBase-root.Mui-focused": {
+                "& > fieldset": {
+                  borderBottom: "3px solid white",
+                  color: "#40e0d0",
+                },
+              },
+            }}
+          />
           <Button
             sx={{
-              background: "#eee",
-              color: "#142531ff",
+              color: "#eee",
+              // color: "#142531ff",
               "&:hover": {
                 color: "#eee",
                 background: "#142531ff",
               },
               fontWeight: "600",
+              height: "100%",
               width: "20%",
             }}
           >
@@ -258,6 +304,19 @@ const OurClients = () => {
           />
         </Marquee>
       </Box>
+      <Typography
+        component="h1"
+        sx={{
+          fontSize: "21px",
+          fontWeight: "300",
+          textAlign: "center",
+          color: "#142531ff",
+          margin: "21px 0 ",
+        }}
+      >
+        {" "}
+        Building the Future with Tech.{" "}
+      </Typography>
     </Box>
   );
 };
