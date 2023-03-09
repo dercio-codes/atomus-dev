@@ -108,7 +108,7 @@ export default function Home() {
             </Box>
             <Button
               className="glow-on-hover"
-              sx={{ background: "transparent" }}
+              sx={{ background: "transparent", color: "#142531ff" }}
               type="button"
             >
               Select Package
@@ -187,7 +187,7 @@ export default function Home() {
             </Box>
             <Button
               className="glow-on-hover"
-              sx={{ background: "transparent" }}
+              sx={{ background: "transparent", color: "#142531ff" }}
               type="button"
             >
               Select Package
@@ -270,7 +270,7 @@ export default function Home() {
             </Box>
             <Button
               className="glow-on-hover"
-              sx={{ background: "transparent" }}
+              sx={{ background: "transparent", color: "#142531ff" }}
               type="button"
             >
               Select Package
@@ -352,7 +352,7 @@ export default function Home() {
             </Box>
             <Button
               className="glow-on-hover"
-              sx={{ background: "transparent" }}
+              sx={{ background: "transparent", color: "#142531ff" }}
               type="button"
             >
               Select Package
@@ -432,7 +432,7 @@ export default function Home() {
             </Box>
             <Button
               className="glow-on-hover"
-              sx={{ background: "transparent" }}
+              sx={{ background: "transparent", color: "#142531ff" }}
               type="button"
             >
               Select Package
@@ -510,7 +510,7 @@ export default function Home() {
             </Box>
             <Button
               className="glow-on-hover"
-              sx={{ background: "transparent" }}
+              sx={{ background: "transparent", color: "#142531ff" }}
               type="button"
             >
               Select Package
@@ -629,9 +629,25 @@ export default function Home() {
         </Grid>
       </Box>
 
-      <Box sx={{ height: "50vh", padding: "7rem 0" }}>
+      <Box
+        id="contact"
+        sx={{
+          height: "100vh",
+          padding: "7rem 0",
+          margin: { lg: "42px 0 0 0" },
+        }}
+      >
         <Grid container>
-          <Grid item xs={12} md={6}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
             <Typography
               component="h1"
               sx={{
@@ -673,29 +689,29 @@ export default function Home() {
             <TextField
               variant="standard"
               label="Name"
-              sx={{ width: "75%", margin: "21px 0" }}
+              sx={{ width: "75%", margin: "21px 0", ...inputStyles }}
             />
             <TextField
               variant="standard"
               label="Surname"
-              sx={{ width: "75%", margin: "21px 0" }}
+              sx={{ width: "75%", margin: "21px 0", ...inputStyles }}
             />
             <TextField
               variant="standard"
               label="Tel"
               type="tel"
-              sx={{ width: "75%", margin: "21px 0" }}
+              sx={{ width: "75%", margin: "21px 0", ...inputStyles }}
             />
             <TextField
               variant="standard"
               label="Email"
               type="email"
-              sx={{ width: "75%", margin: "21px 0" }}
+              sx={{ width: "75%", margin: "21px 0", ...inputStyles }}
             />
             <TextField
               variant="standard"
               label="Name"
-              sx={{ width: "75%", margin: "21px 0" }}
+              sx={{ width: "75%", margin: "21px 0", ...inputStyles }}
             />
             <Button
               className="glow-on-hover"
@@ -760,3 +776,23 @@ export default function Home() {
     </Box>
   );
 }
+
+const inputStyles = {
+  "& .MuiInputBase-root": {
+    borderBottom: "2px solid #142531ff",
+    color: "#142531ff",
+    // margin: "0px 0 5px",
+  },
+  "& .MuiInputBase-root.Mui-focused": {
+    "& > fieldset": {
+      borderBottom: "3px solid #142531ff",
+      color: "#40e0d0",
+    },
+  },
+  "& .MuiInputBase-root.Mui-focused": {
+    "& > fieldset": {
+      borderBottom: "3px solid #142531ff",
+      color: "#40e0d0",
+    },
+  },
+};
