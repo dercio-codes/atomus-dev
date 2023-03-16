@@ -5,12 +5,14 @@ export const Landing = () => {
   return (
     <Box
       sx={{
-        minHeight: "100vh",
+        // minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "space-between",
         position: "relative",
+        background: "rgba(1,1,1,.1)",
+        // marginBottom: "1px",
       }}
     >
       <Box
@@ -87,24 +89,26 @@ export const Landing = () => {
       </Box>
       <Box
         sx={{
-          // background: "#8da9e4ff",
+          background: "rgba(1,1,1,.1)",
           position: "relative",
           width: "100%",
-          height: { xs: "100vh", lg: "70vh" },
+          height: { xs: "50vh", lg: "" },
+          padding: "21px 0",
           display: "flex",
           alignItems: { xs: "flex-end", lg: "center" },
           justifyContent: { xs: "flex-end", lg: "center" },
         }}
       >
-        <OurClients />
+        {/* <OurClients /> */}
       </Box>
       <Box
         sx={{
           height: { xs: "70vh", lg: "50vh" },
           width: { xs: "90%", lg: "50%" },
-          bottom: "0",
+          bottom: "12px",
           position: "absolute",
-          transform: { xs: "translateY(-50vh)", lg: "translateY(-55vh)" },
+          transform: { xs: "translateY(0vh)", lg: "translateY(6vh)" },
+          zIndex: "999",
           borderRadius: "28px",
           background: "#142531ff",
           padding: "2.5rem",

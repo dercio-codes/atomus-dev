@@ -82,20 +82,24 @@ a {
 }
 
 .glow-on-hover:active:after {
-  background: transparent;
+  background: white;
 }
-
+.glow-on-hover:hover:after {
+  background: white;
+}
 .glow-on-hover:hover:before {
   opacity: 1;
+  /* background: white; */
 }
-
+/* .glow-on-hover:hover {
+} */
 .glow-on-hover:after {
   z-index: -1;
   content: "";
   position: absolute;
   width: 100%;
   height: 100%;
-  background: white;
+  /* background: white; */
   left: 0;
   top: 0;
   border-radius: 10px;
