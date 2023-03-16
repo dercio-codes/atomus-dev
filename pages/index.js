@@ -723,7 +723,7 @@ export default function Home() {
               <Typography
                 sx={{
                   color: "white",
-                  margin: "0 auto 21px auto",
+                  margin: "12px auto 21px auto",
                   textAlign: "center",
                 }}
               >
@@ -749,7 +749,7 @@ export default function Home() {
               <Typography
                 sx={{
                   color: "white",
-                  margin: "0 auto 21px auto",
+                  margin: "12px auto 21px auto",
                   textAlign: "center",
                 }}
               >
@@ -790,10 +790,10 @@ export default function Home() {
           </Typography>
           <Box
             sx={{
-              height: "150px",
-              width: "150px",
-              margin: "32px auto",
-              backgroundImage: 'url("/solutions-light.svg")',
+              height: "250px",
+              width: "250px",
+              margin: "12px auto",
+              backgroundImage: 'url("/collab.svg")',
               backgroundSize: "contain",
               backgroundPosition: "center",
               backgroundRepeat: "no-repeat",
@@ -810,10 +810,10 @@ export default function Home() {
               <Box
                 sx={{
                   height: "150px",
-                  width: "150px",
-                  margin: "12px 21px",
-                  backgroundImage: 'url("/nolie-naturals.jpg")',
-                  backgroundSize: "cover",
+                  width: "250px",
+                  margin: "0 21px",
+                  backgroundImage: 'url("/ecommerce-template-0.png")',
+                  backgroundSize: "contain",
                   backgroundPosition: "center",
                   cursor: "pointer",
                   backgroundRepeat: "no-repeat",
@@ -822,12 +822,12 @@ export default function Home() {
               <Typography
                 sx={{
                   color: "white",
-                  margin: "0 auto 21px auto",
+                  margin: "12px auto 21px auto",
                   textAlign: "center",
                   fontSize: "14px",
                 }}
               >
-                Visit Nolie Naturals
+                Visit Template
               </Typography>
             </Box>
             <Box
@@ -840,10 +840,10 @@ export default function Home() {
               <Box
                 sx={{
                   height: "150px",
-                  width: "150px",
-                  margin: "12px 21px",
-                  backgroundImage: 'url("/misguided-logo.jpeg")',
-                  backgroundSize: "cover",
+                  width: "250px",
+                  margin: "0 21px",
+                  backgroundImage: 'url("/static-site-0.png")',
+                  backgroundSize: "contain",
                   backgroundPosition: "center",
                   cursor: "pointer",
                   backgroundRepeat: "no-repeat",
@@ -852,12 +852,12 @@ export default function Home() {
               <Typography
                 sx={{
                   color: "white",
-                  margin: "0 auto 21px auto",
+                  margin: "12px auto 21px auto",
                   textAlign: "center",
                   fontSize: "14px",
                 }}
               >
-                Visit Misguided Ent.
+                Visit Template.
               </Typography>
             </Box>
           </Marquee>
