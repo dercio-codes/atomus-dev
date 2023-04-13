@@ -4,6 +4,7 @@ import Marquee from "react-fast-marquee";
 export const Landing = () => {
   return (
     <Box
+      id="home"
       sx={{
         // minHeight: "100vh",
         display: "flex",
@@ -17,7 +18,7 @@ export const Landing = () => {
     >
       <Box
         sx={{
-          height: "90vh",
+          minHeight: "50vh",
           width: "100%",
           // position: "absolute",
           // background: "#a6acb3ff",
@@ -27,10 +28,11 @@ export const Landing = () => {
           color: "#fff",
           background: "#8da9e4ff",
           alignItems: "center",
-          padding: "2.5rem",
+          padding: "0 2.5rem 3.5rem 2.5rem",
         }}
       >
         <Typography
+          className="carter-one"
           component="h1"
           sx={{
             fontSize: "42px",
@@ -44,169 +46,140 @@ export const Landing = () => {
         </Typography>
         <Typography
           component="h4"
+          className="recursive"
           sx={{
             fontSize: "21px",
-            fontWeight: "400",
+            margin: "21px 0 0 0",
+
+            fontWeight: "450",
             textAlign: "center",
           }}
         >
           {" "}
-          Providing Online Solutions For Your Business.{" "}
+          Creating digital experiences that ignite change.{" "}
+        </Typography>
+
+        <Typography
+          component="h4"
+          className="recursive"
+          sx={{
+            fontSize: "21px",
+            margin: "21px 0",
+            fontWeight: "350",
+            textAlign: "center",
+            width: { xs: "100%", md: "65%" },
+          }}
+        >
+          {
+            "Atomus Developers is a digital product design agency that provides a range of services to help businesses enhance their online presence and achieve their goals in the digital world. Our services include marketing website design, mobile and web product design, search-engine optimization, and web app development. Our mission is to deliver exceptional digital experiences that empower our clients to succeed in a constantly evolving digital landscape, while fostering a culture of continuous learning and improvement. Our value proposition is to provide creative solutions and innovative technologies that exceed our clients' expectations, while fostering a collaborative relationship."
+          }
         </Typography>
         <Box
           sx={{
             height: "250px",
             width: "250px",
-            backgroundImage: 'url("/solutions.svg")',
+            backgroundImage: 'url("/welcome-0.gif")',
             backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
-            margin: "32px 0 0 0",
+            margin: "0 0 0",
           }}
         />
         <Typography
           component="h4"
+          className="recursive"
           sx={{
-            fontSize: "21px",
-            fontWeight: "400",
+            fontSize: "16px",
+            fontWeight: "300",
             textAlign: "center",
           }}
         >
-          {" "}
-          Inspiring Tech Needs for Business.{" "}
+          {
+            "Contact us today to schedule a consultation. Let's create something amazing together. "
+          }
         </Typography>
-        <Typography
-          component="h4"
+        <Button
+          className="button-89"
           sx={{
-            fontSize: "21px",
-            fontWeight: "400",
-            textAlign: "center",
+            marginBottom: "32px",
+            background: "transparent",
+            color: "#142531ff",
           }}
+          type="button"
         >
-          {" "}
-          Accelerating Tech with confidence{" "}
-        </Typography>
+          Get in TOuch
+        </Button>
       </Box>
-      <Box
+
+      {/* <Box
         sx={{
-          background: "rgba(1,1,1,.1)",
-          position: "relative",
+          height: "100vh",
+          background: "rgba(222,222,222,.35)",
           width: "100%",
-          height: { xs: "50vh", lg: "" },
-          padding: "21px 0",
-          display: "flex",
-          alignItems: { xs: "flex-end", lg: "center" },
-          justifyContent: { xs: "flex-end", lg: "center" },
-        }}
-      >
-        {/* <OurClients /> */}
-      </Box>
-      <Box
-        sx={{
-          height: { xs: "70vh", lg: "50vh" },
-          width: { xs: "90%", lg: "50%" },
-          bottom: "12px",
-          position: "absolute",
-          transform: { xs: "translateY(0vh)", lg: "translateY(6vh)" },
-          zIndex: "999",
-          borderRadius: "28px",
-          background: "#142531ff",
-          padding: "2.5rem",
-          color: "#eee",
+          padding: "3.5rem 2.5rem",
           display: "flex",
           flexDirection: "column",
-          justifyContent: "center",
-          // background: "rgba(1,1,1,.9)",
+          alignItems: "center",
+          // justifyContent: "center",
         }}
       >
         <Typography
-          component="h3"
+          component="h1"
+          className="carter-one"
           sx={{
-            fontSize: "24px",
+            fontSize: "32px",
             fontWeight: "600",
-            // textAlign: "center",
+            textAlign: "center",
+            margin: "21px 0 0px 0",
           }}
         >
           {" "}
-          Join Our Mailing List?{" "}
-        </Typography>
-        <Typography
-          component="h3"
-          sx={{
-            fontSize: "21px",
-            fontWeight: "400",
-            // textAlign: "center",
-          }}
-        >
-          {" "}
-          Never miss out on upcoming updates and specials{" "}
+          About Us.{" "}
         </Typography>
         <Box
           sx={{
-            height: "150px",
-            width: "150px",
-            margin: "32px auto",
-            backgroundImage: 'url("/join.svg")',
+            height: "250px",
+            width: "250px",
+            backgroundImage: 'url("/welcome.gif")',
             backgroundSize: "contain",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
+            margin: "21px auto ",
           }}
         />
-
         <Typography
-          component="h3"
+          component="h4"
+          className="recursive"
           sx={{
-            fontSize: "21px",
+            fontSize: "18px",
             fontWeight: "400",
-            // textAlign: "center",
+            textAlign: "center",
           }}
         >
-          {" "}
-          Enter Your Email:{" "}
+          {
+            "Atomus Developers is a digital product design agency that specializes in creating impactful digital experiences. We offer a wide range of services, including marketing website design, mobile and web product design (UI/UX), search-engine optimization, and web app development."
+          }
         </Typography>
-        <Box sx={{ display: "flex" }}>
-          <TextField
-            variant="standard"
-            sx={{
-              background: "",
-              width: "80%",
-              "& .MuiInputBase-root": {
-                borderBottom: "2px solid white",
-                color: "white",
-                margin: "0px 0 5px",
-              },
-              "& .MuiInputBase-root.Mui-focused": {
-                "& > fieldset": {
-                  borderBottom: "3px solid white",
-                  color: "#40e0d0",
-                },
-              },
-              "& .MuiInputBase-root.Mui-focused": {
-                "& > fieldset": {
-                  borderBottom: "3px solid white",
-                  color: "#40e0d0",
-                },
-              },
-            }}
-          />
-          <Button
-            sx={{
-              color: "#eee",
-              // color: "#142531ff",
-              "&:hover": {
-                color: "#eee",
-                background: "#142531ff",
-              },
-              fontWeight: "600",
-              height: "100%",
-              width: "20%",
-            }}
-          >
-            {" "}
-            Join{" "}
-          </Button>
+        <Box sx={{ width: "100%", margin: "21px 0" }}>
+          <div class="about-section">
+            <div class="inner-container">
+              <h1>About Us</h1>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus velit ducimus, enim inventore earum, eligendi nostrum
+                pariatur necessitatibus eius dicta a voluptates sit deleniti
+                autem error eos totam nisi neque voluptates sit deleniti autem
+                error eos totam nisi neque.
+              </p>
+              <div class="skills">
+                <span>Web Design</span>
+                <span>Photoshop & Illustrator</span>
+                <span>Coding</span>
+              </div>
+            </div>
+          </div>
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 };
