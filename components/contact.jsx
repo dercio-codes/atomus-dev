@@ -103,7 +103,7 @@ export const Contact = () => {
             height: "auto",
             background: "white",
             border: "1px solid rgba(1,1,1,.1) ",
-            padding: "150px",
+            padding: {xs:"40px 60px" , lg"150px"} ,
             margin: "21px 0 0 0",
           }}
         >
@@ -224,7 +224,12 @@ export const Contact = () => {
           />
         </Grid>
 
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} sx={{
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            background: "rgba(255,255,255,0.3)",
+          }} >
           <TextField
             variant="standard"
             name="name"
