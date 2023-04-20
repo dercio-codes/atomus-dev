@@ -441,10 +441,5 @@ const inputStyles = {
       color: "#40e0d0",
     },
   },
-  "& .MuiInputBase-root.Mui-focused": {
-    "& > fieldset": {
-      borderBottom: "3px solid #142531ff",
-      color: "#40e0d0",
-    },
-  },
+  
 };
