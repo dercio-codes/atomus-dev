@@ -103,7 +103,7 @@ export const Contact = () => {
             height: "auto",
             background: "white",
             border: "1px solid rgba(1,1,1,.1) ",
-            padding: {xs:"40px 60px" , lg"150px"} ,
+            padding: {xs:"40px 60px" , lg:"150px"} ,
             margin: "21px 0 0 0",
           }}
         >
