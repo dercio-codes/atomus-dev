@@ -13,7 +13,6 @@ import Mailchimp from "react-mailchimp-form";
 
 export const Contact = () => {
   const [isProcessing, setIsProcessing] = useState(false);
-  const [email, setEmail] = useState("");
   const [query, setquery] = useState({
     name: "",
     tel: "",
@@ -82,18 +81,6 @@ export const Contact = () => {
           setIsProcessing(false);
         });
     }
-  };
-
-  const submitJoinMailing = (e) => {
-    e.preventDefault();
-    console.log("starting");
-    const url =
-      "https://gmail.us21.list-manage.com/subscribe/post?u=1da28cc5db60fdae621ba0174&amp;id=3b386a0117&amp;f_id=00ddb7e1f0";
-    jsonp(`${url}&EMAIL=${email}`, { param: "c" }, (_, data) => {
-      const { msg, result } = data;
-      // do something with response
-      console.log(data);
-    });
   };
 
   return (
