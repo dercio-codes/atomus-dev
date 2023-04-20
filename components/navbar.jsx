@@ -194,7 +194,7 @@ export const Navbar = () => {
                 margin: "0 auto",
               }}
             >
-              <div class="container" style={{ width: "100% !important" }}>
+              <div className="container" style={{ width: "100% !important" }}>
                 <Link
                   target=""
                   href="#contact"
@@ -203,14 +203,14 @@ export const Navbar = () => {
                   <a
                     target=""
                     href="#contact"
-                    class="button"
+                    className="button"
                     style={{ width: "100% !important" }}
                   >
-                    <div class="button__line"></div>
-                    <div class="button__line"></div>
-                    <span class="button__text">GET IN TOUCH</span>
-                    <div class="button__drow1"></div>
-                    <div class="button__drow2"></div>
+                    <div className="button__line"></div>
+                    <div className="button__line"></div>
+                    <span className="button__text">GET IN TOUCH</span>
+                    <div className="button__drow1"></div>
+                    <div className="button__drow2"></div>
                   </a>
                 </Link>
               </div>
@@ -401,14 +401,14 @@ export const Navbar = () => {
             scale: { xs: "0.7", md: "1" },
           }}
         >
-          <div class="container">
+          <div className="container">
             <Link target="_blank" href="#contact">
-              <a target="_blank" href="#contact" class="button">
-                <div class="button__line"></div>
-                <div class="button__line"></div>
-                <span class="button__text">GET IN TOUCH</span>
-                <div class="button__drow1"></div>
-                <div class="button__drow2"></div>
+              <a target="_blank" href="#contact" className="button">
+                <div className="button__line"></div>
+                <div className="button__line"></div>
+                <span className="button__text">GET IN TOUCH</span>
+                <div className="button__drow1"></div>
+                <div className="button__drow2"></div>
               </a>
             </Link>
           </div>
