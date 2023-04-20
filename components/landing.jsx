@@ -1,4 +1,4 @@
-import { Box, Typography, TextField, Button } from "@mui/material";
+import { Box, Typography, Button } from "@mui/material";
 import Marquee from "react-fast-marquee";
 
 export const Landing = () => {

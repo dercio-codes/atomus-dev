@@ -1,12 +1,5 @@
 import Marquee from "react-fast-marquee";
-import {
-  Box,
-  Typography,
-  Grid,
-  Button,
-  TextField,
-  IconButton,
-} from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 export const Templates = () => {
   return (

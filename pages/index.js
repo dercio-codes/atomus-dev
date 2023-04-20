@@ -1,23 +1,9 @@
-import {
-  Box,
-  Typography,
-  Grid,
-  Button,
-  TextField,
-  IconButton,
-} from "@mui/material";
+import { Box } from "@mui/material";
 import { Landing } from "../components/landing";
 import { OurServices } from "../components/our-services";
 import { Portfolio } from "../components/portfolio";
 import { Templates } from "../components/templates";
 import { Contact } from "../components/contact";
-import Marquee from "react-fast-marquee";
-import EmailIcon from "@mui/icons-material/Email";
-import CallIcon from "@mui/icons-material/Call";
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import Link from "next/link";
-import { useState } from "react";
 
 export default function Home() {
   console.log("Home");

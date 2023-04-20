@@ -1,12 +1,5 @@
 import Marquee from "react-fast-marquee";
-import {
-  Box,
-  Typography,
-  Grid,
-  Button,
-  TextField,
-  IconButton,
-} from "@mui/material";
+import { Box, Typography, Grid, Button, TextField } from "@mui/material";
 import { useState } from "react";
 import EmailIcon from "@mui/icons-material/Email";
 import CallIcon from "@mui/icons-material/Call";

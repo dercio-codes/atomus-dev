@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import { Navbar } from "./../components/navbar";
 import Head from "next/head";
 import "react-toastify/dist/ReactToastify.css";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 
 function MyApp({ Component, pageProps }) {
   return (
