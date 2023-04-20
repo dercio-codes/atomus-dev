@@ -227,7 +227,8 @@ export const Contact = () => {
         <Grid item xs={12} md={6} sx={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center",
+            justifyContent: "center", 
+            alignItems:"center", 
             background: "rgba(255,255,255,0.3)",
           }} >
           <TextField
