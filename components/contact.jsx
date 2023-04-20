@@ -1,4 +1,4 @@
-import Marquee from "react-fast-marquee";
+
 import { Box, Typography, Grid, Button, TextField } from "@mui/material";
 import { useState } from "react";
 import EmailIcon from "@mui/icons-material/Email";
@@ -8,7 +8,6 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import Link from "next/link";
 import axios from "axios";
 import { toast } from "react-toastify";
-import jsonp from "jsonp";
 import Mailchimp from "react-mailchimp-form";
 
 export const Contact = () => {
