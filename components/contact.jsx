@@ -167,7 +167,7 @@ export const Contact = () => {
             }}
           ></Box>
         </Grid>
-        <Grid item xs={12}>
+      {/* <Grid item xs={12}>
           <video
             style={{ width: "100%", height: "100%", margin: "21px 0" }}
             autoPlay
@@ -179,7 +179,7 @@ export const Contact = () => {
               type="video/mp4"
             />
           </video>
-        </Grid>
+        </Grid> */}
         <Grid
           item
           xs={12}
@@ -402,11 +402,11 @@ export const Contact = () => {
         </Grid>
       </Grid>
 
-      <iframe
+          {/* <iframe
         id="newletter"
         style={{ width: "100%", border: "none" }}
         src="https://mailchi.mp/b6eee456fbb4/boost-your-online-presence-with-our-exclusive-web-design-and-development-deal"
-      ></iframe>
+      ></iframe> */}
       <Box
         sx={{
           background: "#8daae5ff",
