@@ -1,4 +1,5 @@
 import { Box, Typography, Grid } from "@mui/material";
+import Link from "next/link";
 
 export const Portfolio = () => {
   return (
@@ -74,7 +75,9 @@ export const Portfolio = () => {
               textAlign: "center",
             }}
           >
-            Visit Nolie Naturals
+            <Link href="https://www.nolie-naturals.com">
+              Visit Nolie Naturals
+            </Link>
           </Typography>
         </Grid>
         <Grid item xs={6} md={4} lg={3}>
@@ -101,7 +104,9 @@ export const Portfolio = () => {
               textAlign: "center",
             }}
           >
-            Visit Misguided Ent.
+            <Link href="https://www.misguidedsa.co.za">
+              Visit Misguided Ent.
+            </Link>
           </Typography>
         </Grid>
       </Grid>

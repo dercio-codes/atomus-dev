@@ -122,7 +122,7 @@ export const Navbar = () => {
         </IconButton>
         <Box>
           <Button
-            className="button-89"
+            // className="button-89"
             sx={{
               background: "transparent",
               color: "#142531ff",
@@ -137,7 +137,7 @@ export const Navbar = () => {
             </Link>
           </Button>
           <Button
-            className="button-89"
+            // className="button-89"
             sx={{
               background: "transparent",
               color: "#142531ff",
@@ -152,7 +152,7 @@ export const Navbar = () => {
             </Link>
           </Button>
           <Button
-            className="button-89"
+            // className="button-89"
             sx={{
               background: "transparent",
               color: "#142531ff",
@@ -171,6 +171,29 @@ export const Navbar = () => {
                 style={{ width: "100% !important" }}
               >
                 Portfolio
+              </a>
+            </Link>
+          </Button>
+          <Button
+            // className="button-89"
+            sx={{
+              background: "transparent",
+              color: "#142531ff",
+              minWidth: "100%",
+            }}
+            type="button"
+          >
+            <Link
+              target=""
+              href="#newletter"
+              style={{ width: "100% !important" }}
+            >
+              <a
+                target=""
+                href="#newletter"
+                style={{ width: "100% !important" }}
+              >
+                Newletter
               </a>
             </Link>
           </Button>

@@ -1,4 +1,3 @@
-
 import { Box, Typography, Grid, Button, TextField } from "@mui/material";
 import { useState } from "react";
 import EmailIcon from "@mui/icons-material/Email";
@@ -88,7 +87,7 @@ export const Contact = () => {
       sx={{
         height: "100vh",
         padding: "12rem 0 0 0",
-        margin: { lg: "0px 0 0 0" },
+        margin: { lg: "100px 0 0 0" },
         zIndex: "-5",
         // background: "white",
       }}
@@ -103,8 +102,8 @@ export const Contact = () => {
             height: "auto",
             background: "white",
             border: "1px solid rgba(1,1,1,.1) ",
-            padding: {xs:"40px 60px" , lg:"150px"} ,
-            margin: "21px 0 0 0",
+            padding: { xs: "40px 60px", lg: "150px" },
+            margin: "0 0 0",
           }}
         >
           <h1 className="carter-one">About Us</h1>
@@ -168,7 +167,19 @@ export const Contact = () => {
             }}
           ></Box>
         </Grid>
-
+        <Grid item xs={12}>
+          <video
+            style={{ width: "100%", height: "100%", margin: "21px 0" }}
+            autoPlay
+            loop
+            controls
+          >
+            <source
+              src={"https://www.atomusdev.co.za/Atomus%20Dev.mp4"}
+              type="video/mp4"
+            />
+          </video>
+        </Grid>
         <Grid
           item
           xs={12}
@@ -178,6 +189,7 @@ export const Contact = () => {
             flexDirection: "column",
             justifyContent: "center",
             background: "rgba(255,255,255,0.3)",
+            margin: "100px 0 50px 0",
           }}
         >
           <Typography
@@ -213,24 +225,44 @@ export const Contact = () => {
             sx={{
               height: "350px",
               width: "350px",
-              margin: "12px auto",
               backgroundImage: 'url("/contact-outline.gif")',
               backgroundSize: "contain",
               backgroundPosition: "center",
               cursor: "pointer",
               backgroundRepeat: "no-repeat",
               transition: "800ms",
+              margin: "0 auto",
             }}
           />
         </Grid>
 
-        <Grid item xs={12} md={6} sx={{
+        <Grid
+          item
+          xs={12}
+          md={6}
+          sx={{
             display: "flex",
             flexDirection: "column",
-            justifyContent: "center", 
-            alignItems:"center", 
+            justifyContent: "center",
+            alignItems: "center",
             background: "rgba(255,255,255,0.3)",
-          }} >
+            margin: "0 0 70px 0",
+          }}
+        >
+          <Typography
+            component="h1"
+            className="carter-one"
+            sx={{
+              fontSize: "32px",
+              fontWeight: "600",
+              textAlign: "center",
+              color: "#142531ff",
+              margin: "0 0 0px 0 ",
+            }}
+          >
+            {" "}
+            Fill in the form below.{" "}
+          </Typography>
           <TextField
             variant="standard"
             name="name"
@@ -279,6 +311,7 @@ export const Contact = () => {
             {isProcessing ? "Sending" : "Submit"}
           </Button>
         </Grid>
+
         <Grid
           item
           xs={12}
@@ -368,6 +401,12 @@ export const Contact = () => {
           </Box>
         </Grid>
       </Grid>
+
+      <iframe
+        id="newletter"
+        style={{ width: "100%", border: "none" }}
+        src="https://mailchi.mp/b6eee456fbb4/boost-your-online-presence-with-our-exclusive-web-design-and-development-deal"
+      ></iframe>
       <Box
         sx={{
           background: "#8daae5ff",
@@ -447,5 +486,4 @@ const inputStyles = {
       color: "#40e0d0",
     },
   },
-  
 };

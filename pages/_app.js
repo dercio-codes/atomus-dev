@@ -34,7 +34,7 @@ function MyApp({ Component, pageProps }) {
       </Head>
       <Navbar />
       <Component {...pageProps} />
-      <ToastContainer toastStyle={{ backgroundColor: "#eee", color: "#eee" }} />
+      <ToastContainer toastStyle={{ backgroundColor: "#eee", color: "#111" }} />
     </div>
   );
 }

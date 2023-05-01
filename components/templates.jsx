@@ -1,5 +1,6 @@
 import Marquee from "react-fast-marquee";
 import { Box, Typography } from "@mui/material";
+import Link from "next/link";
 
 export const Templates = () => {
   return (
@@ -78,7 +79,9 @@ export const Templates = () => {
               fontSize: "14px",
             }}
           >
-            Visit Template
+            <Link href="https://ecommerce-template-0.vercel.app/">
+              Visit Template.
+            </Link>
           </Typography>
         </Box>
         <Box
@@ -111,7 +114,9 @@ export const Templates = () => {
               fontSize: "14px",
             }}
           >
-            Visit Template.
+            <Link href="https://promoter-template.vercel.app/">
+              Visit Template.
+            </Link>
           </Typography>
         </Box>
       </Marquee>

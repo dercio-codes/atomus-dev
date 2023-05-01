@@ -1,15 +1,17 @@
-import { format_email } from "../../lib/standard-email-html-template";
+import { format_email } from "../../lib/package-selection-html";
 import { send_email } from "../../lib/emailer";
 
 export default async function handler(req, res) {
+  console.log(req.body);
   const name = req.body["name"];
   const email = req.body["email"];
   const tel = req.body["tel"];
-  const query = req.body["query"];
+  const company = req.body["company"];
+  const packageName = req.body["packageName"];
 
-  const email_html = format_email(name, email, tel, query);
+  const email_html = format_email(company, name, email, tel, packageName);
 
-  const headline = `Contact Query From ${name}`;
+  const headline = `${packageName} Package Selection From ${name}`;
 
   try {
     await send_email(headline, email_html);
